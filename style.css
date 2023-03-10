@@ -1,0 +1,69 @@
+
+@import  url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap");
+@import  url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+h1{
+    font-family :  "Montserrat" , sem serifa;
+}
+body{
+    background-image: url(./fundogrande.png);
+    background-repeat: no-repeat;
+
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+    padding-top: 20PX;
+    
+}
+.header ul{
+    display: flex; /* define o elemento como um flex container */
+    list-style: none; /* remove os marcadores de lista */
+    padding: 10px;/* remove o espaçamento interno */
+   
+
+    
+}
+  
+.header li{
+    display: inline-block; /* define o elemento como um bloco em linha */
+    margin-right: 10px; /* adiciona uma margem à direita para separar os itens */
+    font-family :  "Montserrat" , sem serifa;
+    font-size: 20px;
+    padding-right: 25px;
+
+}
+.header h1{
+    padding-right: 500px; /* AFASTA O NOME DA NAVEGAÇÃO  */
+    padding-left: 30PX;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.header a:hover{
+    text-decoration: none;
+    color: rgb(116, 98, 98);
+    font-weight: bolder;
+}
+.imagem img{
+    padding-left: 200px;
+    max-width: 150px;
+    max-height: 150px;
+    align-items: center;
+    margin: auto;
+}
+
+
+.ftfazenda img{
+    max-width: 200px;
+    max-height: 2000px;
+    border-radius: 20px;
+}
+section{
+    padding-left: 30px;
+}
