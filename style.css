@@ -1,69 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Press+Start+2P&family=Roboto+Mono&display=swap');
 
-@import  url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap");
-@import  url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-
-h1{
-    font-family :  "Montserrat" , sem serifa;
+:root{
+    --Azulclaro: #1e2a3a;
+    --Azulescuro: #111821;
+    --Verde: #54b689;
+    --lines: #465b75;
 }
 body{
-    background-image: url(./fundogrande.png);
-    background-repeat: no-repeat;
+    background-color: var(--Azulescuro);
+}
+.conteiner{
+    background-color: rgb(10, 10, 46);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    height: 100vh;
+
+    
+}
+.conteiner h1, h2, p, a{
+    font-family: 'Roboto Mono', monospace;
+}
+.filhos{
+    color: aliceblue;
+    padding: 10px;
+
 
 }
-
-
-.header{
-    display: flex;
-    align-items: center;
-    padding: 0px;
+.bio{
+    background-color: var(--Azulclaro);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right: 5px solid #2c333d;
+    
+    
+}
+.infos{
+    background-color: var(--Azulescuro);
+    grid-column-start: 2;
+    grid-column-end: 6;
+    padding-left: 50px;
+    min-width: 900px;    
+    
+}
+.eu img{
+    border-radius: 10px;
+    width: 150px;
+}
+.eu{
+    max-width: 100vw;
     text-align: center;
-    padding-top: 20PX;
-    
-}
-.header ul{
-    display: flex; /* define o elemento como um flex container */
-    list-style: none; /* remove os marcadores de lista */
-    padding: 10px;/* remove o espaçamento interno */
-   
+    /* border-bottom: 5px solid var(--Verde); */
+    border-radius: 30px;
+    border-top: 5px solid var(--lines);
+
 
     
 }
-  
-.header li{
-    display: inline-block; /* define o elemento como um bloco em linha */
-    margin-right: 10px; /* adiciona uma margem à direita para separar os itens */
-    font-family :  "Montserrat" , sem serifa;
-    font-size: 20px;
-    padding-right: 25px;
-
-}
-.header h1{
-    padding-right: 500px; /* AFASTA O NOME DA NAVEGAÇÃO  */
-    padding-left: 30PX;
-}
-.header a{
-    text-decoration: none;
-    color: black;
-}
-.header a:hover{
-    text-decoration: none;
-    color: rgb(116, 98, 98);
-    font-weight: bolder;
-}
-.imagem img{
-    padding-left: 200px;
-    max-width: 150px;
-    max-height: 150px;
+.mail{
+    border-top: 2px solid var(--lines);
+    padding: 10px;
     align-items: center;
-    margin: auto;
 }
 
-
-.ftfazenda img{
-    max-width: 200px;
-    max-height: 2000px;
-    border-radius: 20px;
+.grean{
+    color: var(--Verde);
 }
-section{
-    padding-left: 30px;
+.eu li{
+    padding: 10px;
+    display: inline;
+}
+.eu ul{
+    list-style: none;
+    padding: 0%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.descri a{
+    text-decoration: underline;
+    color: #54b689;
+}
+.descri{
+    max-width: 600px;
+    border-bottom: 2px solid var(--lines);
+}
+.descri p{
+    font-family: 'Roboto Mono', monospace;
+}
+.eu li img{
+    width: 40px;
+    background-color: var(--Verde);
+    border-radius: 100px;
+}
+.frase{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+.footer{
+    grid-row-start: 2;
+    max-width: 700px;
+    padding-top: 50px;
+}
+.competencias{
+    display: grid;
+    grid-template-areas: 
+    'comp0 comp0 comp0 comp0'
+    'comp1 comp2 comp3 comp4'
+    'comp1 comp2 comp3 comp4';
+    text-align: center;
+    align-items: center;
+}
+.comp0{
+    grid-area: comp0;
+    
+}
+.comp1{
+    grid-area: comp1;
+    background-color: var(--Azulclaro);
+}
+.comp2{
+    grid-area: comp2;
+    background-color: var(--Azulclaro);
+}
+.comp3{
+    grid-area: comp3;
+    background-color: var(--Azulclaro);
+}
+.comp4{
+    grid-area: comp4;
+    background-color: var(--Azulclaro);
 }
