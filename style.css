@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Press+Start+2P&family=Roboto+Mono&display=swap');
 
-/* Reset */
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-  }
 :root{
     --Azulclaro: #1e2a3a;
     --Azulescuro: #111821;
@@ -38,7 +31,6 @@ body{
     grid-column-start: 1;
     grid-column-end: 2;
     border-right: 5px solid #2c333d;
-    grid-area: bio;
     
     
 }
@@ -47,8 +39,7 @@ body{
     grid-column-start: 2;
     grid-column-end: 6;
     padding-left: 50px;
-    min-width: 900px; 
-    grid-area: infos;   
+    min-width: 900px;    
     
 }
 .eu img{
@@ -140,102 +131,3 @@ a{
     grid-area: comp4;
     background-color: var(--Azulclaro);
 }
-
-
-
-/* Mobile */
-@media(max-width: 450px) {
-
-    
-    @media only screen and (max-width: 600px) {
-
-        /* Reset */
-        * {
-          padding: 0;
-          margin: 0;
-          font-family: 'Roboto', sans-serif;
-          box-sizing: border-box;
-        }
-      
-        /* Define as cores */
-        :root {
-          --Azulclaro: #1e2a3a;
-          --Azulescuro: #111821;
-          --Verde: #54b689;
-          --lines: #465b75;
-        }
-      
-        /* Define o fundo do body */
-        body {
-          background-color: var(--Azulescuro);
-        }
-      
-        /* Define o grid container para mobile */
-        .conteiner {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-areas: 
-            "bio"
-            "infos"
-            "competencias"
-            "footer";
-          height: auto;
-          min-height: 100vh;
-        }
-      
-        /* Define o grid area para a bio */
-        .bio {
-          grid-area: bio;
-          border: none;
-        }
-      
-        /* Define o grid area para as informações */
-        .infos {
-          grid-area: infos;
-          padding-left: 30px;
-          padding-right: 30px;
-          min-width: auto;
-          border: none;
-        }
-      
-        /* Define a imagem de perfil */
-        .eu img {
-          border-radius: 50%;
-          width: 100%;
-        }
-      
-        /* Define a lista de informações */
-        .eu ul {
-          list-style: none;
-          padding: 0%;
-        }
-      
-        /* Define o link para o email */
-        .eu li:last-child a {
-          text-decoration: none;
-          color: var(--lines);
-          font-weight: bold;
-        }
-      
-        /* Define a seção de competências */
-        .competencias {
-          grid-template-columns: 1fr;
-          grid-template-areas:
-            "comp0"
-            "comp1"
-            "comp2"
-            "comp3"
-            "comp4";
-        }
-      
-        /* Define o rodapé */
-        .footer {
-          max-width: 100%;
-          padding-top: 30px;
-          text-align: center;
-        }
-      }
-      
-    
-}
-  
