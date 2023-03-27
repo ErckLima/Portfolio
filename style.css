@@ -221,11 +221,10 @@ a{
         .competencias {
           grid-template-columns: 1fr;
           grid-template-areas:
-            "comp0"
-            "comp1"
-            "comp2"
-            "comp3"
-            "comp4";
+            "comp0 comp0"
+            "comp1 comp2"
+            "comp3 comp4";
+            align-items: center;
         }
       
         /* Define o rodapé */
