@@ -144,10 +144,7 @@ a{
 
 
 /* Mobile */
-@media(max-width: 450px) {
-
-    
-    @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
         /* Reset */
         * {
@@ -233,8 +230,5 @@ a{
           padding-top: 30px;
           text-align: center;
         }
-      }
-      
-    
 }
   
